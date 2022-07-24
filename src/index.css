@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  h1 {
+    @apply text-[40px] font-bold;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-3xl;
+  }
+  h5 {
+    @apply text-xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 border-primary border-2 rounded-sm uppercase text-[16px] font-semibold hover:cursor-pointer hover:bg-primary hover:text-white transition-all;
+  }
+  .card {
+    @apply bg-primary rounded-md shadow-md shadow-primary relative overflow-hidden hover:shadow-lg hover:shadow-primary;
+  }
+
+  .badge {
+    @apply absolute flex justify-center items-center rounded-md top-2 left-2 p-2 min-w-[25%] bg-cyan-50;
+  }
+}
